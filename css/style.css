@@ -1,0 +1,295 @@
+/* ======= Globale ======= */
+ul {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "font";
+  src: url(../webfonts/Assistant-Medium.ttf);
+}
+
+body {
+  font-family: "font";
+}
+
+/* ======= clases background ======= */
+.bg-img-home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../imges/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-img-total {
+  background-image: linear-gradient(
+      rgba(37, 120, 253, 0.1),
+      rgb(37, 115, 250, 1)
+    ),
+    url(../imges/post-3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.bg-img-slider {
+  background-image: linear-gradient(
+      rgba(37, 120, 253, 0.1),
+      rgb(37, 115, 250, 1)
+    ),
+    url(../imges/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.bg-img-contact {
+  background-image: linear-gradient(
+      rgba(37, 120, 253, 0.4),
+      rgba(37, 115, 250, 0.8)
+    ),
+    url(../imges/overlay-bg.jpg);
+}
+
+.bg-footer {
+  background-color: #0062d3;
+}
+
+.fs-72 {
+  font-weight: 800;
+  font-size: 72px;
+}
+
+/*  */
+
+.undr-line {
+  position: relative;
+}
+
+.undr-line::after {
+  content: "";
+  width: 15%;
+  height: 4px;
+  position: absolute;
+  background-color: #0078ff;
+  bottom: -10%;
+  left: 0;
+}
+
+.line-section {
+  position: relative;
+}
+.line-section::after {
+  content: "";
+  width: 10%;
+  height: 4px;
+  position: absolute;
+  background-color: #0078ff;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.card-footer img {
+  width: 30px;
+  height: 30px;
+  transition: all 1s;
+  transform: scaleX(-1);
+}
+
+.botom {
+  bottom: -50px !important;
+}
+
+/* ======= blog ======= */
+.img-blog img {
+  transition: all 0.9s;
+}
+
+/* ======= slider ======= */
+.card-slider img {
+  width: 150px;
+  height: 150px;
+}
+
+/* ======= hover ======= */
+
+.card-body a {
+  transition: all 0.5s;
+}
+
+.card-body a:hover {
+  color: #0078ff;
+}
+
+.icon {
+  border: #0078ff 8px solid;
+  transition: all 0.5s;
+}
+
+.card:hover .icon {
+  background-color: #0078ff;
+  border: #cde1f8 8px solid;
+  color: white;
+}
+.icon:hover {
+  background-color: #0078ff;
+  border: #cde1f8 8px solid;
+  color: white;
+}
+
+.card .img-prand img {
+  transition: all 1s;
+}
+.card:hover img {
+  transform: scale(1.3);
+}
+
+input {
+  transition: all 0.5s;
+}
+input:hover {
+  box-shadow: 2px 2px 15px #0078ff;
+}
+
+nav ul li {
+  font-size: 20px;
+  line-height: 30px;
+}
+nav ul li a {
+  position: relative;
+  overflow: hidden;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+nav ul li:hover a::after {
+  opacity: 1;
+  left: 0;
+}
+
+/* ======= ainmition home ======= */
+
+section.home .contint {
+  position: relative;
+}
+
+section.home .contint::after {
+  content: "";
+  width: 100%;
+  color: #fff;
+  font-size: 45px;
+  position: absolute;
+  bottom: -60%;
+  left: 0;
+  animation: mov infinite 5s;
+}
+
+@keyframes mov {
+  0% {
+    content: "D|";
+  }
+  4% {
+    content: "De|";
+  }
+  8% {
+    content: "Deve|";
+  }
+  12% {
+    content: "Develo|";
+  }
+  16% {
+    content: "Develoer|";
+  }
+  19% {
+    content: "Develoer|";
+  }
+  23% {
+    content: "Develo|";
+  }
+  27% {
+    content: "Deve|";
+  }
+  30% {
+    content: "De|";
+  }
+  33% {
+    content: "Desi|";
+  }
+  36% {
+    content: "Desig|";
+  }
+  39% {
+    content: "Designer|";
+  }
+  42% {
+    content: "Designer|";
+  }
+  45% {
+    content: "Designer|";
+  }
+  48% {
+    content: "Designer|";
+  }
+  51% {
+    content: "Design|";
+  }
+  53% {
+    content: "Desi|";
+  }
+  56% {
+    content: "De|";
+  }
+  59% {
+    content: "D";
+  }
+  62% {
+    content: "Ph|";
+  }
+  65% {
+    content: "Phot|";
+  }
+  69% {
+    content: "Photo|";
+  }
+  72% {
+    content: "Photog|";
+  }
+  75% {
+    content: "Photogr|";
+  }
+  79% {
+    content: "Photograph";
+  }
+  82% {
+    content: "Photographe|";
+  }
+  85% {
+    content: "Photographer|";
+  }
+  88% {
+    content: "Photographer|";
+  }
+  92% {
+    content: "Photographer|";
+  }
+  95% {
+    content: "Photograp|";
+  }
+  97% {
+    content: "Photog|";
+  }
+  100% {
+    content: "Pho|";
+  }
+}
